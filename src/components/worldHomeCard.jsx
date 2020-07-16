@@ -61,6 +61,8 @@ class WorldHomeCard extends Component {
             animationDelay: "1.8s",
             boxShadow: "0 0 20px rgba(0,0,0,0.25)",
             borderRadius: "5px",
+            display: 'flex', flexDirection: 'column',
+            overflow: 'hidden'
           }}
         >
           <div
@@ -92,10 +94,10 @@ class WorldHomeCard extends Component {
           <div className="w-100"></div>
 
           {showData && (
-            <table className="table table-sm table-borderless">
+            <table className="table table-sm table-borderless" style={{display: 'flex', flexDirection: 'column', overflow: 'hidden'}}>
               <thead>
-                <tr>
-                  <th className="text-info span delta" style={{ width: "25%" }}>
+                <tr style={{display: 'flex', paddingLaft: 10,flexDirection: 'column'}}>
+                  <th className="text-info span delta" style={{ width: "25%"}}>
                     CONFIRMED
                   </th>
                   <th

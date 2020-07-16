@@ -15,41 +15,49 @@ import wearmask from "../assets/mask.jpg";
 import stayinformed from "../assets/stayInformed.png";
 import chills from "../assets/chills.jpg";
 import avoidcontact from "../assets/avoidContact.jpg";
-import './image-container.css'
+import "./image-container.css";
 function WHOGuidelinesPage() {
   return (
-    <Container className="flex">
+    <Container className="container">
       <div>
         {/*  <center>
         <h1>WHO Guidelines</h1>
         </center> */}
         <div className="ml-5 mr-5">
           <br />
-          <h2 style={{ textAlign: "center", color: "#063146" }}>COVID-19 Outbreak</h2>
+          <h2
+            className="container"
+            style={{ textAlign: "center", color: "#063146" }}
+          >
+            COVID-19 Outbreak
+          </h2>
           <br />
-          <h4 style={{ textAlign: "left", marginLeft: 100, color: "#063146" }}>
+          <h4
+            className="container"
+            style={{ textAlign: "left", color: "#063146" }}
+          >
             What is COVID-19?
           </h4>
           <img
+            className= 'image-container container'
             src={image}
             alt="COVID-19"
             style={{
               height: 200,
               width: 300,
-              marginTop: 10,
+              marginTop: 20,
               marginBottom: 20,
-              marginLeft: 100,
             }}
           />
 
           <p
+            className="container"
             style={{
-              textAlign:'left',
-              float: 'left',
-              marginLeft: 100,
-              marginRight: 100,
+              textAlign: "left",
+              float: "left",
+              
               lineHeight: 2,
-              color: "#063146"
+              color: "#063146",
             }}
           >
             Coronavirus disease (COVID-19) is an infectious disease caused by a
@@ -67,13 +75,13 @@ function WHOGuidelinesPage() {
             flexed elbow).{" "}
           </p>
           <p
+            className="container"
             style={{
-              textAlign:'left',
-              float: 'left',
-              marginLeft: 100,
-              marginRight: 100,
+              textAlign: "left",
+              float: "left",
+              marginTop: 15,
               lineHeight: 2,
-              color: "#063146"
+              color: "#063146",
             }}
           >
             A novel coronavirus (nCoV) is a new strain that has not been
@@ -86,15 +94,21 @@ function WHOGuidelinesPage() {
             treatments for COVID-19. However, there are many ongoing clinical
             trials evaluating potential treatments.
           </p>
-          <h4 style={{ marginLeft: 100 }}>How did it start?</h4>
+          <br/>
+          <h4
+            className="container"
+            style={{ textAlign: "left", paddingTop:15, color: "#063146" }}
+          >
+            How did it start?
+          </h4>
           <p
+            className="container"
             style={{
-              textAlign:'left',
-              float: 'right',
-              marginLeft: 100,
-              marginRight: 100,
+              textAlign: "left",
+              float: "right",
+              marginTop: 10,
               lineHeight: 2,
-              color: "#063146"
+              color: "#063146",
             }}
           >
             Coronavirus disease 2019 (COVID-19) was first identified amid an
@@ -108,7 +122,7 @@ function WHOGuidelinesPage() {
           <Button
             href="http://www.emro.who.int/health-topics/corona-virus/index.html"
             target="blank"
-            style={{ backgroundColor: "#063146", border: 0, marginLeft: 100 }}
+            style={{ backgroundColor: "#063146", marginTop: 15, border: 0 }}
           >
             Read More
           </Button>
@@ -116,221 +130,290 @@ function WHOGuidelinesPage() {
         <div>
           <br />
           <hr />
-          <h3 className="ml-5 mr-5" style={{ textAlign: "center", color: "#063146" }}>Symptoms</h3>
-          <Row style={{  display: 'flex',
-        justifyContent: 'space-evenly',
-        alignItems: 'center',
-        flexWrap: 'wrap',marginTop: 20 }}>
-          <Col md={3}>
-          <img  className='image-container' 
-            src={fever}
-            alt="fever"
+          <h3
+            className="ml-5 mr-5"
+            style={{ textAlign: "center", color: "#063146" }}
+          >
+            Symptoms
+          </h3>
+          <Row
             style={{
-              height: 200,
-              width: 200,
-              paddingTop: 5,
-              marginBottom: 10
+              display: "flex",
+              justifyContent: "space-evenly",
+              alignItems: "center",
+              flexWrap: "wrap",
+              marginTop: 20,
             }}
-          />
-	   <p  style={{textAlign: 'center', color: "#063146"}} >Fever</p>
-          </Col>
-          <Col md={3}>
-          <img  className='image-container' 
-            src={cold}
-            alt="cold"
-            style={{
-              height: 200,
-              width: 200,
-              paddingTop: 5,
-              marginBottom: 10
-            }}
-          />
-	   <p style={{textAlign: 'center', color: "#063146"}}>Cold</p>
-          </Col>
-          <Col md={3}>
-          <img  className='image-container' 
-            src={headache}
-            alt="Headache"
-            style={{
-              height: 200,
-              width: 200,
-              paddingTop: 5,
-              marginBottom: 10
-            }}
-          />
-	   <p style={{textAlign: 'center', color: "#063146"}}>Headaches</p>
-          </Col>
-          <Col md={3}>
-          <img  className='image-container' 
-            src={cough}
-            alt="Cough"
-            style={{
-              height: 200,
-              width: 200,
-              paddingTop: 5,
-              marginBottom: 10
-            }}
-          />
-	   <p style={{textAlign: 'center', color: "#063146"}}>Cough</p>
-          </Col>
+          >
+            <Col md={3}>
+              <img
+                className="image-container"
+                src={fever}
+                alt="fever"
+                style={{
+                  height: 200,
+                  width: 200,
+                  paddingTop: 5,
+                  marginBottom: 10,
+                }}
+              />
+              <p style={{ textAlign: "center", color: "#063146" }}>Fever</p>
+            </Col>
+            <Col md={3}>
+              <img
+                className="image-container"
+                src={cold}
+                alt="cold"
+                style={{
+                  height: 200,
+                  width: 200,
+                  paddingTop: 5,
+                  marginBottom: 10,
+                }}
+              />
+              <p style={{ textAlign: "center", color: "#063146" }}>Cold</p>
+            </Col>
+            <Col md={3}>
+              <img
+                className="image-container"
+                src={headache}
+                alt="Headache"
+                style={{
+                  height: 200,
+                  width: 200,
+                  paddingTop: 5,
+                  marginBottom: 10,
+                }}
+              />
+              <p style={{ textAlign: "center", color: "#063146" }}>Headaches</p>
+            </Col>
+            <Col md={3}>
+              <img
+                className="image-container"
+                src={cough}
+                alt="Cough"
+                style={{
+                  height: 200,
+                  width: 200,
+                  paddingTop: 5,
+                  marginBottom: 10,
+                }}
+              />
+              <p style={{ textAlign: "center", color: "#063146" }}>Cough</p>
+            </Col>
           </Row>
-          <Row style={{  display: 'flex',
-        justifyContent: 'space-evenly',
-        alignItems: 'center',
-        flexWrap: 'wrap',marginTop: 20 }}>
-          <Col md={3}>
-          <img  className='image-container' 
-            src={fatigue}
-            alt="Fatigue"
+          <Row
             style={{
-              height: 200,
-              width: 200,
-              paddingTop: 5,
-              marginBottom: 10
+              display: "flex",
+              justifyContent: "space-evenly",
+              alignItems: "center",
+              flexWrap: "wrap",
+              marginTop: 20,
             }}
-          />
-	   <p style={{textAlign: 'center', color: "#063146"}}>Fatigue</p>
-          </Col>
-          <Col md={3}>
-          <img  className='image-container' 
-            src={naussea}
-            alt="Naussea"
-            style={{
-              height: 200,
-              width: 200,
-              paddingTop: 5,
-              paddingBottom: 10
-            }}
-          />
-           <p style={{textAlign: 'center', color: "#063146"}}>Naussea</p>
-          </Col>
-          <Col md={3}>
-          <img  className='image-container' 
-            src={diarrhea}
-            alt="Diarrhea"
-            style={{
-              height: 200,
-              width: 200,
-              paddingTop: 5,
-              marginBottom: 10,
-            }}
-          />
-	   <p style={{textAlign: 'center', color: "#063146"}}>Diarrhea</p>
-          </Col>
-          <Col md={3}>
-          <img  className='image-container' 
-            src={breathing}
-            alt="Breathing"
-            style={{
-              height: 200,
-              width: 200,
-              paddingTop: 5,
-              marginBottom: 10,
-            }}
-          />
-	   <p style={{textAlign: 'center', color: "#063146"}}>Difficulty Breathing</p>
-          </Col>
+          >
+            <Col md={3}>
+              <img
+                className="image-container"
+                src={fatigue}
+                alt="Fatigue"
+                style={{
+                  height: 200,
+                  width: 200,
+                  paddingTop: 5,
+                  marginBottom: 10,
+                }}
+              />
+              <p style={{ textAlign: "center", color: "#063146" }}>Fatigue</p>
+            </Col>
+            <Col md={3}>
+              <img
+                className="image-container"
+                src={naussea}
+                alt="Naussea"
+                style={{
+                  height: 200,
+                  width: 200,
+                  paddingTop: 5,
+                  paddingBottom: 10,
+                }}
+              />
+              <p style={{ textAlign: "center", color: "#063146" }}>Naussea</p>
+            </Col>
+            <Col md={3}>
+              <img
+                className="image-container"
+                src={diarrhea}
+                alt="Diarrhea"
+                style={{
+                  height: 200,
+                  width: 200,
+                  paddingTop: 5,
+                  marginBottom: 10,
+                }}
+              />
+              <p style={{ textAlign: "center", color: "#063146" }}>Diarrhea</p>
+            </Col>
+            <Col md={3}>
+              <img
+                className="image-container"
+                src={breathing}
+                alt="Breathing"
+                style={{
+                  height: 200,
+                  width: 200,
+                  paddingTop: 5,
+                  marginBottom: 10,
+                }}
+              />
+              <p style={{ textAlign: "center", color: "#063146" }}>
+                Difficulty Breathing
+              </p>
+            </Col>
           </Row>
         </div>
         <div className="ml-5 mr-5">
           <br />
           <hr />
-          <h3 style={{ textAlign: "center", color: "#063146" }}>Preventive Measures</h3>
-	  <Row style={{  display: 'flex',
-        justifyContent: 'space-evenly',
-        alignItems: 'center',
-        flexWrap: 'wrap',marginTop: 20 }}>
-          <Col md={3}>
-          <img  className='image-container' 
-            src={stayhome}
-            alt="Stay Home"
+          <h3 style={{ textAlign: "center", color: "#063146" }}>
+            Preventive Measures
+          </h3>
+          <Row
             style={{
-              height: 200,
-              width: 200,
-              paddingTop: 5,
-              marginBottom: 20
+              display: "flex",
+              justifyContent: "space-evenly",
+              alignItems: "center",
+              flexWrap: "wrap",
+              marginTop: 20,
             }}
-          />
-	   <p style={{textAlign: 'center', color: "#063146"}}>Stay Home, Stay Safe. Self isolate from others if you feel unwell.</p>
-          </Col>
-          <Col md={3}>
-          <img  className='image-container' 
-            src={washhands}
-            alt="Wash Hands"
-            style={{
-              height: 200,
-              width: 200,
-              paddingTop: 5,
-              marginBottom: 15,
-            }}
-          />
-	   <p style={{textAlign: 'center', color: "#063146"}}>Wash your hands reguraly 
-	   for 20 seconds with soap and water</p>
-          </Col>
-          <Col md={3}>
-          <img  className='image-container' 
-            src={wearmask}
-            alt="Wear Mask"
-            style={{
-              height: 200,
-              width: 200,
-              paddingTop: 5,
-              marginBottom: 15,
-            }}
-          />
-	   <p style={{textAlign: 'center', color: "#063146"}}>Cover your mouth and nose with masks when outside.</p>
-          </Col>
+          >
+            <Col md={3}>
+              <img
+                className="image-container"
+                src={stayhome}
+                alt="Stay Home"
+                style={{
+                  height: 200,
+                  width: 200,
+                  paddingTop: 5,
+                  marginBottom: 20,
+                }}
+              />
+              <p style={{ textAlign: "center", color: "#063146" }}>
+                Stay Home, Stay Safe. Self isolate from others if you feel
+                unwell.
+              </p>
+            </Col>
+            <Col md={3}>
+              <img
+                className="image-container"
+                src={washhands}
+                alt="Wash Hands"
+                style={{
+                  height: 200,
+                  width: 200,
+                  paddingTop: 5,
+                  marginBottom: 15,
+                }}
+              />
+              <p style={{ textAlign: "center", color: "#063146" }}>
+                Wash your hands reguraly for 20 seconds with soap and water
+              </p>
+            </Col>
+            <Col md={3}>
+              <img
+                className="image-container"
+                src={wearmask}
+                alt="Wear Mask"
+                style={{
+                  height: 200,
+                  width: 200,
+                  paddingTop: 5,
+                  marginBottom: 15,
+                }}
+              />
+              <p style={{ textAlign: "center", color: "#063146" }}>
+                Cover your mouth and nose with masks when outside.
+              </p>
+            </Col>
           </Row>
-          <Row style={{  display: 'flex',
-        justifyContent: 'space-evenly',
-        alignItems: 'center',
-        flexWrap: 'wrap',marginTop: 20 }}>
-          <Col md={3}>
-          <img  className='image-container' 
-            src={stayinformed}
-            alt="Stay Informed"
+          <Row
             style={{
-              height: 200,
-              width: 200,
-              paddingTop: 5,
-              marginBottom: 20
+              display: "flex",
+              justifyContent: "space-evenly",
+              alignItems: "center",
+              flexWrap: "wrap",
+              marginTop: 20,
             }}
-          />
-	   <p style={{textAlign: 'center', color: "#063146"}}>Stay informed and follow the recommended practices.</p>
-          </Col>
-          <Col md={3}>
-          <img  className='image-container' 
-            src={chills}
-            alt="Contact doctor if chills"
-            style={{
-              height: 200,
-              width: 250,
-              paddingTop: 5,
-              marginBottom: 20
-            }}
-          />
-           <p style={{textAlign: 'center', color: "#063146"}}>If you have fever, cough and difficulty breathing, 
-	   seek medical care immediately.</p>
-          </Col>
-          <Col md={3}>
-          <img  className='image-container' 
-            src={avoidcontact}
-            alt="Avoid contact"
-            style={{
-              height: 200,
-              width: 250,
-              paddingTop: 5,
-              marginBottom: 20,
-            }}
-          />
-	   <p style={{textAlign: 'center', color: "#063146"}}>Avoid close contact with people who are unwell. Maintain 1 meter or 4 feet distance.</p>
-          </Col>
+          >
+            <Col md={3}>
+              <img
+                className="image-container"
+                src={stayinformed}
+                alt="Stay Informed"
+                style={{
+                  height: 200,
+                  width: 200,
+                  paddingTop: 5,
+                  marginBottom: 20,
+                }}
+              />
+              <p style={{ textAlign: "center", color: "#063146" }}>
+                Stay informed and follow the recommended practices.
+              </p>
+            </Col>
+            <Col md={3}>
+              <img
+                className="image-container"
+                src={chills}
+                alt="Contact doctor if chills"
+                style={{
+                  height: 200,
+                  width: 250,
+                  paddingTop: 5,
+                  marginBottom: 20,
+                }}
+              />
+              <p style={{ textAlign: "center", color: "#063146" }}>
+                If you have fever, cough and difficulty breathing, seek medical
+                care immediately.
+              </p>
+            </Col>
+            <Col md={3}>
+              <img
+                className="image-container"
+                src={avoidcontact}
+                alt="Avoid contact"
+                style={{
+                  height: 200,
+                  width: 250,
+                  paddingTop: 5,
+                  marginBottom: 20,
+                }}
+              />
+              <p style={{ textAlign: "center", color: "#063146" }}>
+                Avoid close contact with people who are unwell. Maintain 1 meter
+                or 4 feet distance.
+              </p>
+            </Col>
           </Row>
         </div>
         <div className="ml-5 mr-5">
           <br />
-          <hr /> 
-          <i><p style={{ textAlign: 'center', fontSize: 25, fontFamily: 'Arial, sans-serif', marginBottom: 50, color: "#063146" }}>"Ultimately, the greatest lesson that COVID-19 can teach humanity is that we are all in this together."</p></i>
+          <hr />
+          <i>
+            <p
+              style={{
+                textAlign: "center",
+                fontSize: 25,
+                fontFamily: "Arial, sans-serif",
+                marginBottom: 50,
+                color: "#063146",
+              }}
+            >
+              "Ultimately, the greatest lesson that COVID-19 can teach humanity
+              is that we are all in this together."
+            </p>
+          </i>
         </div>
       </div>
     </Container>
